@@ -138,7 +138,6 @@
 				14C740A31EE3647300514544 /* Views */,
 				142824681EEC3F2D007C916D /* Models */,
 				14E5C7D21EE58F90008952E0 /* Input */,
-				14E5C7BD1EE57118008952E0 /* SleepDiaryCoordinator.swift */,
 				14C7407E1EE349EC00514544 /* Main.storyboard */,
 				14C740811EE349EC00514544 /* Assets.xcassets */,
 				14C740831EE349EC00514544 /* LaunchScreen.storyboard */,
@@ -154,6 +153,7 @@
 				14C7408D1EE34CAB00514544 /* AppCoordinator.swift */,
 				14C740911EE34EB800514544 /* LoginCoordinator.swift */,
 				1464EAF31EE420C300FE093D /* MainFlowCoordinator.swift */,
+				14E5C7BD1EE57118008952E0 /* SleepDiaryCoordinator.swift */,
 			);
 			path = Coordinators;
 			sourceTree = "<group>";
