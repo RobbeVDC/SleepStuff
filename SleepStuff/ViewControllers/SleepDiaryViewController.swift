@@ -74,14 +74,30 @@ extension SleepDiaryViewController: SleepDiaryDataSourceDelegate {
             question = SleepDiaryQuestionData.whatTimeOutOfBed
         }
         
-        self.presentActionSheet(question: question)
+        self.presentTimeActionSheet(question: question)
+//        self.presentActionSheet(question: question)
+    }
+    
+    private func presentTimeActionSheet(question: SleepDiaryQuestionData) {
+        ActionSheetDatePicker.show(withTitle: question.rawValue,
+                                   datePickerMode: .time,
+                                   selectedDate: Date(),
+                                   doneBlock: { [weak self] (_, date, _) in
+                                    guard let `self` = self else { print("self gone in File: \(#file) on Line: \(#line) in Function: \(#function)"); return }
+                                    
+                                    if let date = date as? Date {
+                                        self.selectionDelegate?.selectValue(value: date.formattedHour, question: question)
+                                    }
+            }, cancel: { ActionStringCancelBlock in return }, origin: self.view)
     }
     
     private func presentActionSheet(question: SleepDiaryQuestionData) {
         ActionSheetStringPicker.show(withTitle: question.rawValue,
                                      rows: SleepDiaryAnswerData.getAnswers(forQuestion: question),
                                      initialSelection: 1,
-                                     doneBlock: { picker, index, value in
+                                     doneBlock: { [weak self] picker, index, value in
+                                        guard let `self` = self else { print("self gone in File: \(#file) on Line: \(#line) in Function: \(#function)"); return }
+                                        
                                         if let value = value as? String {
                                             self.selectionDelegate?.selectValue(value: value, question: question)
                                         }
