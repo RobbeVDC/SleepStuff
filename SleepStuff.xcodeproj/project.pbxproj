@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1428246A1EEC3F80007C916D /* SleepDiaryData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142824691EEC3F80007C916D /* SleepDiaryData.swift */; };
 		144C169C1EE9B1FC00D3666E /* PureLayout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14C7409A1EE3523000514544 /* PureLayout.framework */; };
 		144C169D1EE9B1FC00D3666E /* SVProgressHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1464EAF11EE4175000FE093D /* SVProgressHUD.framework */; };
 		144C169F1EE9B27800D3666E /* CoreActionSheetPicker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 144C169E1EE9B1FC00D3666E /* CoreActionSheetPicker.framework */; };
@@ -42,7 +41,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		142824691EEC3F80007C916D /* SleepDiaryData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepDiaryData.swift; sourceTree = "<group>"; };
 		144C169E1EE9B1FC00D3666E /* CoreActionSheetPicker.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreActionSheetPicker.framework; path = Carthage/Build/iOS/CoreActionSheetPicker.framework; sourceTree = "<group>"; };
 		1464EAED1EE409B000FE093D /* LoginButtonCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginButtonCell.swift; sourceTree = "<group>"; };
 		1464EAEE1EE409B000FE093D /* LoginButtonCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginButtonCell.xib; sourceTree = "<group>"; };
@@ -95,7 +93,6 @@
 		142824681EEC3F2D007C916D /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				142824691EEC3F80007C916D /* SleepDiaryData.swift */,
 				14DD87B91EEC79160058F7E1 /* SleepDiaryQuestionData.swift */,
 				14DD87BB1EEC791F0058F7E1 /* SleepDiaryAnswerData.swift */,
 			);
@@ -359,7 +356,6 @@
 				14C740921EE34EB800514544 /* LoginCoordinator.swift in Sources */,
 				1464EAF41EE420C300FE093D /* MainFlowCoordinator.swift in Sources */,
 				1464EAEF1EE409B000FE093D /* LoginButtonCell.swift in Sources */,
-				1428246A1EEC3F80007C916D /* SleepDiaryData.swift in Sources */,
 				14E5C7C71EE57462008952E0 /* SleepDiaryDataSource.swift in Sources */,
 				14E5C7C91EE5767E008952E0 /* UITableView+Extension.swift in Sources */,
 				14C740961EE34F4500514544 /* LoginViewController.swift in Sources */,
