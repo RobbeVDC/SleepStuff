@@ -89,6 +89,8 @@ extension SleepDiaryDataSource: SleepDiarySelectionDelegate {
             self.tableViewViewModel.whatTimeWokeUpSelectedValue = value
         case .whatTimeOutOfBed:
             self.tableViewViewModel.whatTimeOutOfBedSelectedValue = value
+        case .sleepQuality:
+            self.tableViewViewModel.sleepQualitySelectedValue = value
         }
         
         self.tableViewViewModel.prepareScreen()

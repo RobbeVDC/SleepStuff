@@ -24,7 +24,7 @@ struct SleepDiaryAnswerData {
             case .bad:
                 return "2: Slecht"
             case .average:
-                return "3: Average"
+                return "3: Gemiddeld"
             case .good:
                 return "4: Goed"
             case .veryGood:

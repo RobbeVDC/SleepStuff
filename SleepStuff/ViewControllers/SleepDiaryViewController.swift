@@ -62,23 +62,49 @@ extension SleepDiaryViewController: SleepDiaryDataSourceDelegate {
         switch cellType {
         case .whatTimeInBed:
             question = SleepDiaryQuestionData.whatTimeInBed
+            self.presentTimeActionSheet(question: question, originalValue: originalValue)
         case .whatTimeFellAsleep:
             question = SleepDiaryQuestionData.whatTimeFellAsleep
+            self.presentTimeActionSheet(question: question, originalValue: originalValue)
         case .howLongTillFellAsleep:
             question = SleepDiaryQuestionData.howLongTillFellAsleep
+            self.presentTimeActionSheet(question: question, originalValue: originalValue)
         case .howManyTimesWokeUp:
             question = SleepDiaryQuestionData.howManyTimesWokeUp
+            self.presentAlertControllerTextField(question: question, originalValue: originalValue)
         case .whatTimeWokeUp:
             question = SleepDiaryQuestionData.whatTimeWokeUp
+            self.presentTimeActionSheet(question: question, originalValue: originalValue)
         case .whatTimeOutOfBed:
             question = SleepDiaryQuestionData.whatTimeOutOfBed
+            self.presentTimeActionSheet(question: question, originalValue: originalValue)
+        case .sleepQuality:
+            question = SleepDiaryQuestionData.sleepQuality
+            self.presentActionSheet(question: question, originalValue: originalValue)
         }
-        
-        self.presentTimeActionSheet(question: question)
-//        self.presentActionSheet(question: question)
     }
     
-    private func presentTimeActionSheet(question: SleepDiaryQuestionData) {
+    private func presentAlertControllerTextField(question: SleepDiaryQuestionData, originalValue: String?) {
+        let alertController = UIAlertController(title: question.rawValue, message: nil, preferredStyle: .alert)
+        
+        alertController.addAction(UIAlertAction(title: "OK", style: .default, handler: { alert -> Void in
+            if let textField = alertController.textFields!.first {
+                self.selectionDelegate?.selectValue(value: textField.text ?? "", question: question)
+            }
+        }))
+        alertController.addAction(UIAlertAction(title: "Annuleer", style: .cancel, handler: nil))
+        
+        alertController.addTextField(configurationHandler: {(textField: UITextField!) -> Void in
+            textField.keyboardType = .numberPad
+            if let originalValue = originalValue {
+                textField.text = originalValue
+            }
+        })
+        
+        self.present(alertController, animated: true, completion: nil)
+    }
+    
+    private func presentTimeActionSheet(question: SleepDiaryQuestionData, originalValue: String?) {
         ActionSheetDatePicker.show(withTitle: question.rawValue,
                                    datePickerMode: .time,
                                    selectedDate: Date(),
@@ -91,7 +117,7 @@ extension SleepDiaryViewController: SleepDiaryDataSourceDelegate {
             }, cancel: { ActionStringCancelBlock in return }, origin: self.view)
     }
     
-    private func presentActionSheet(question: SleepDiaryQuestionData) {
+    private func presentActionSheet(question: SleepDiaryQuestionData, originalValue: String?) {
         ActionSheetStringPicker.show(withTitle: question.rawValue,
                                      rows: SleepDiaryAnswerData.getAnswers(forQuestion: question),
                                      initialSelection: 1,

@@ -14,5 +14,6 @@ enum SleepDiaryQuestionData: String {
     howLongTillFellAsleep = "Hoe lang duurde het voor je in slaap viel?",
     howManyTimesWokeUp = "Hoeveel keer ben je wakker geworden?",
     whatTimeWokeUp = "Hoe laat ben je wakker geworden?",
-    whatTimeOutOfBed = "Hoe laat ben je uit bed gegaan?"
+    whatTimeOutOfBed = "Hoe laat ben je uit bed gegaan?",
+    sleepQuality = "Hoe goed heb je geslapen?"
 }

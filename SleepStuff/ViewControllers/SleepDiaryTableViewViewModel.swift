@@ -14,7 +14,8 @@ enum SleepDiaryCellType {
     howLongTillFellAsleep,
     howManyTimesWokeUp,
     whatTimeWokeUp,
-    whatTimeOutOfBed
+    whatTimeOutOfBed,
+    sleepQuality
 }
 
 class SleepDiaryTableViewViewModel {
@@ -25,6 +26,7 @@ class SleepDiaryTableViewViewModel {
     var howManyTimesWokeUpSelectedValue: String?
     var whatTimeWokeUpSelectedValue: String?
     var whatTimeOutOfBedSelectedValue: String?
+    var sleepQualitySelectedValue: String?
     
     // MARK: - Properties
     
@@ -47,6 +49,7 @@ class SleepDiaryTableViewViewModel {
         self.availableRows.append(SleepDiaryCellViewModel(titleString: SleepDiaryQuestionData.howManyTimesWokeUp.rawValue, accessoryString: howManyTimesWokeUpSelectedValue, cellType: .howManyTimesWokeUp))
         self.availableRows.append(SleepDiaryCellViewModel(titleString: SleepDiaryQuestionData.whatTimeWokeUp.rawValue, accessoryString: whatTimeWokeUpSelectedValue, cellType: .whatTimeWokeUp))
         self.availableRows.append(SleepDiaryCellViewModel(titleString: SleepDiaryQuestionData.whatTimeOutOfBed.rawValue, accessoryString: whatTimeOutOfBedSelectedValue, cellType: .whatTimeOutOfBed))
+        self.availableRows.append(SleepDiaryCellViewModel(titleString: SleepDiaryQuestionData.sleepQuality.rawValue, accessoryString: sleepQualitySelectedValue, cellType: SleepDiaryCellType.sleepQuality))
     }
     
     func numberOfRows() -> Int {
