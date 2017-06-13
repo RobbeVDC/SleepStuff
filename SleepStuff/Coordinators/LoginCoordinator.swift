@@ -23,8 +23,7 @@ class LoginCoordinator: Coordinator {
 // MARK: - LoginViewControllerDelegate
 
 extension LoginCoordinator: LoginViewControllerDelegate {
-    
-    func didTapLogin(viewController: LoginViewController) {
+    func didTapLogin(userEmail: String, userPassword: String, viewController: LoginViewController) {
         SVProgressHUD.show()
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {

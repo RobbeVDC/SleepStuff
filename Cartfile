@@ -1,3 +1,5 @@
 github "PureLayout/PureLayout"
 github "SVProgressHUD/SVProgressHUD"
 github "skywinder/ActionSheetPicker-3.0"
+github "Skyscanner/SkyFloatingLabelTextField"
+

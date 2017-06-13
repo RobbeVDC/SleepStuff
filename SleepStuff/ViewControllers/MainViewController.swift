@@ -42,10 +42,6 @@ class MainViewController: BaseViewController {
         self.navigationItem.hidesBackButton = true
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: self.viewModel.logoutButtonTitle(), style: .plain, target: self, action: #selector(MainViewController.logout))
         
-        if #available(iOS 11.0, *) {
-            self.navigationController?.navigationBar.prefersLargeTitles = true
-        }
-        
         self.view.addSubview(self.sleepDiaryButton)
         self.sleepDiaryButton.setTitle(self.viewModel.sleepDiaryButtonTitle(), for: .normal)
         self.sleepDiaryButton.backgroundColor = .red

@@ -15,6 +15,12 @@ class LoginTextFieldCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        self.loadView()
+    }
+    
+    private func loadView() {
+        self.contentTextField.layer.borderWidth = 0.5
+        self.contentTextField.layer.borderColor = UIColor.lightGray.cgColor
     }
     
     func setupCell(labelTitle: String, textfieldPlaceholder: String) {
