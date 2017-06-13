@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import CoreActionSheetPicker
+import ActionSheetPicker_3_0
 
 protocol SleepDiaryViewControllerDelegate: class {
     func didTapSave(viewController: SleepDiaryViewController)

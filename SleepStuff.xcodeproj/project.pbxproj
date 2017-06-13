@@ -8,9 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		1443E05F1EEC984B0005AD4A /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1443E05E1EEC984B0005AD4A /* Date+Extension.swift */; };
-		144C169C1EE9B1FC00D3666E /* PureLayout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14C7409A1EE3523000514544 /* PureLayout.framework */; };
-		144C169D1EE9B1FC00D3666E /* SVProgressHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1464EAF11EE4175000FE093D /* SVProgressHUD.framework */; };
-		144C169F1EE9B27800D3666E /* CoreActionSheetPicker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 144C169E1EE9B1FC00D3666E /* CoreActionSheetPicker.framework */; };
 		1464EAEF1EE409B000FE093D /* LoginButtonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1464EAED1EE409B000FE093D /* LoginButtonCell.swift */; };
 		1464EAF01EE409B000FE093D /* LoginButtonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1464EAEE1EE409B000FE093D /* LoginButtonCell.xib */; };
 		1464EAF41EE420C300FE093D /* MainFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1464EAF31EE420C300FE093D /* MainFlowCoordinator.swift */; };
@@ -39,6 +36,7 @@
 		14E5C7CB1EE579CF008952E0 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E5C7CA1EE579CF008952E0 /* MainViewModel.swift */; };
 		14E5C7D01EE58485008952E0 /* SleepDiaryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E5C7CE1EE58485008952E0 /* SleepDiaryCell.swift */; };
 		14E5C7D11EE58485008952E0 /* SleepDiaryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14E5C7CF1EE58485008952E0 /* SleepDiaryCell.xib */; };
+		AD11C35C68F490793E73C11E /* Pods_SleepStuff.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89872ACBC28C3EB6CCE7D752 /* Pods_SleepStuff.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -67,6 +65,8 @@
 		14C740A61EE364E100514544 /* LoginTextFieldCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginTextFieldCell.xib; sourceTree = "<group>"; };
 		14DD87B91EEC79160058F7E1 /* SleepDiaryQuestionData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepDiaryQuestionData.swift; sourceTree = "<group>"; };
 		14DD87BB1EEC791F0058F7E1 /* SleepDiaryAnswerData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepDiaryAnswerData.swift; sourceTree = "<group>"; };
+		14E2D0EF1EEFDAB400C2358D /* SkyFloatingLabelTextField.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SkyFloatingLabelTextField.framework; path = Carthage/Build/iOS/SkyFloatingLabelTextField.framework; sourceTree = "<group>"; };
+		14E2D0F01EEFDAC200C2358D /* SkyFloatingLabelTextField.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SkyFloatingLabelTextField.framework; sourceTree = "<group>"; };
 		14E5C7BD1EE57118008952E0 /* SleepDiaryCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SleepDiaryCoordinator.swift; sourceTree = "<group>"; };
 		14E5C7C01EE57138008952E0 /* SleepDiaryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SleepDiaryViewController.swift; sourceTree = "<group>"; };
 		14E5C7C21EE572F4008952E0 /* SleepDiaryViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SleepDiaryViewModel.swift; sourceTree = "<group>"; };
@@ -76,6 +76,9 @@
 		14E5C7CA1EE579CF008952E0 /* MainViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		14E5C7CE1EE58485008952E0 /* SleepDiaryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SleepDiaryCell.swift; sourceTree = "<group>"; };
 		14E5C7CF1EE58485008952E0 /* SleepDiaryCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SleepDiaryCell.xib; sourceTree = "<group>"; };
+		89872ACBC28C3EB6CCE7D752 /* Pods_SleepStuff.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SleepStuff.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C18C97420377C75FCD038004 /* Pods-SleepStuff.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SleepStuff.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SleepStuff/Pods-SleepStuff.debug.xcconfig"; sourceTree = "<group>"; };
+		C78C8256A4D8FDB891D72167 /* Pods-SleepStuff.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SleepStuff.release.xcconfig"; path = "Pods/Target Support Files/Pods-SleepStuff/Pods-SleepStuff.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,9 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				144C169C1EE9B1FC00D3666E /* PureLayout.framework in Frameworks */,
-				144C169D1EE9B1FC00D3666E /* SVProgressHUD.framework in Frameworks */,
-				144C169F1EE9B27800D3666E /* CoreActionSheetPicker.framework in Frameworks */,
+				AD11C35C68F490793E73C11E /* Pods_SleepStuff.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -116,6 +117,7 @@
 				14C740791EE349EC00514544 /* SleepStuff */,
 				14C740781EE349EC00514544 /* Products */,
 				14C740991EE3523000514544 /* Frameworks */,
+				98E38D241F804D37813F74CA /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -180,9 +182,12 @@
 		14C740991EE3523000514544 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				14E2D0EF1EEFDAB400C2358D /* SkyFloatingLabelTextField.framework */,
+				14E2D0F01EEFDAC200C2358D /* SkyFloatingLabelTextField.framework */,
 				144C169E1EE9B1FC00D3666E /* CoreActionSheetPicker.framework */,
 				1464EAF11EE4175000FE093D /* SVProgressHUD.framework */,
 				14C7409A1EE3523000514544 /* PureLayout.framework */,
+				89872ACBC28C3EB6CCE7D752 /* Pods_SleepStuff.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -237,6 +242,15 @@
 			name = Input;
 			sourceTree = "<group>";
 		};
+		98E38D241F804D37813F74CA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C18C97420377C75FCD038004 /* Pods-SleepStuff.debug.xcconfig */,
+				C78C8256A4D8FDB891D72167 /* Pods-SleepStuff.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -244,11 +258,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 14C740891EE349EC00514544 /* Build configuration list for PBXNativeTarget "SleepStuff" */;
 			buildPhases = (
+				6ABDC8641D5AFF65F727D09E /* [CP] Check Pods Manifest.lock */,
 				14C740731EE349EC00514544 /* Sources */,
 				14C740741EE349EC00514544 /* Frameworks */,
 				14C740751EE349EC00514544 /* Resources */,
-				14C7409C1EE3524A00514544 /* Carthage */,
 				14C7409F1EE3552A00514544 /* SwiftLint */,
+				03EDC4A8FF1D535973D03B63 /* [CP] Embed Pods Frameworks */,
+				C9C1807BC9769ABB069BD30C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -310,22 +326,20 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		14C7409C1EE3524A00514544 /* Carthage */ = {
+		03EDC4A8FF1D535973D03B63 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
-				"$(SRCROOT)/Carthage/Build/iOS/PureLayout.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/SVProgressHUD.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/CoreActionSheetPicker.framework",
 			);
-			name = Carthage;
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/carthage copy-frameworks";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SleepStuff/Pods-SleepStuff-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
 		14C7409F1EE3552A00514544 /* SwiftLint */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -340,6 +354,36 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
+		};
+		6ABDC8641D5AFF65F727D09E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C9C1807BC9769ABB069BD30C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SleepStuff/Pods-SleepStuff-resources.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -503,15 +547,16 @@
 		};
 		14C7408A1EE349EC00514544 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C18C97420377C75FCD038004 /* Pods-SleepStuff.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = SleepStuff/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = be.rvdc.SleepStuff;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -522,15 +567,16 @@
 		};
 		14C7408B1EE349EC00514544 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C78C8256A4D8FDB891D72167 /* Pods-SleepStuff.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = SleepStuff/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = be.rvdc.SleepStuff;
 				PRODUCT_NAME = "$(TARGET_NAME)";

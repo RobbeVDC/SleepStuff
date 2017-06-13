@@ -8,6 +8,7 @@
 
 import UIKit
 import SVProgressHUD
+import IQKeyboardManagerSwift
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -21,6 +22,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         self.setupHud()
         
+        IQKeyboardManager.sharedManager().enable = true
+
         let navController = UINavigationController()
         navController.isNavigationBarHidden = true
         self.window?.rootViewController = navController

@@ -38,9 +38,9 @@ class LoginViewModel {
     func placeholderForCellType(cellType: LoginCellType) -> String {
         switch cellType {
         case .username:
-            return "Enter your username"
+            return "Username"
         case .password:
-            return "Enter your password"
+            return "Password"
         default:
             return ""
         }

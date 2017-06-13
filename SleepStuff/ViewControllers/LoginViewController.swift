@@ -119,7 +119,7 @@ extension LoginViewController: UITableViewDataSource {
             
         case .password:
             let aCell = tableView.dequeueReusableCell(withIdentifier: String(describing: LoginTextFieldCell.self), for: indexPath) as! LoginTextFieldCell
-            aCell.setupCell(labelTitle: self.viewModel.titleForCellType(cellType: cellType), textfieldPlaceholder: self.viewModel.placeholderForCellType(cellType: cellType))
+            aCell.setupCell(labelTitle: self.viewModel.titleForCellType(cellType: cellType), textfieldPlaceholder: self.viewModel.placeholderForCellType(cellType: cellType), isSecure: self.viewModel.secureTextInput(cellType: cellType))
             if self.userPasswordTextField == nil {
                 self.userPasswordTextField = aCell.contentTextField
 //                self.userPasswordTextField?.delegate = self
