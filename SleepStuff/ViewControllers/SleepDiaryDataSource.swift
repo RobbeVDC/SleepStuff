@@ -66,6 +66,7 @@ extension SleepDiaryDataSource: UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.tableView.deselectRow(at: indexPath, animated: true)
         let cellViewModel = self.tableViewViewModel.availableRows[indexPath.row]
         self.delegate?.didSelect(cellType: cellViewModel.cellType, originalValue: cellViewModel.accessoryString)
     }

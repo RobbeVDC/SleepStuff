@@ -36,6 +36,7 @@
 		14E5C7CB1EE579CF008952E0 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E5C7CA1EE579CF008952E0 /* MainViewModel.swift */; };
 		14E5C7D01EE58485008952E0 /* SleepDiaryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E5C7CE1EE58485008952E0 /* SleepDiaryCell.swift */; };
 		14E5C7D11EE58485008952E0 /* SleepDiaryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14E5C7CF1EE58485008952E0 /* SleepDiaryCell.xib */; };
+		14F0E5781EF00E9100198B43 /* UIAlertController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F0E5771EF00E9100198B43 /* UIAlertController+Extension.swift */; };
 		AD11C35C68F490793E73C11E /* Pods_SleepStuff.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89872ACBC28C3EB6CCE7D752 /* Pods_SleepStuff.framework */; };
 /* End PBXBuildFile section */
 
@@ -76,6 +77,7 @@
 		14E5C7CA1EE579CF008952E0 /* MainViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		14E5C7CE1EE58485008952E0 /* SleepDiaryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SleepDiaryCell.swift; sourceTree = "<group>"; };
 		14E5C7CF1EE58485008952E0 /* SleepDiaryCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SleepDiaryCell.xib; sourceTree = "<group>"; };
+		14F0E5771EF00E9100198B43 /* UIAlertController+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIAlertController+Extension.swift"; sourceTree = "<group>"; };
 		89872ACBC28C3EB6CCE7D752 /* Pods_SleepStuff.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SleepStuff.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C18C97420377C75FCD038004 /* Pods-SleepStuff.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SleepStuff.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SleepStuff/Pods-SleepStuff.debug.xcconfig"; sourceTree = "<group>"; };
 		C78C8256A4D8FDB891D72167 /* Pods-SleepStuff.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SleepStuff.release.xcconfig"; path = "Pods/Target Support Files/Pods-SleepStuff/Pods-SleepStuff.release.xcconfig"; sourceTree = "<group>"; };
@@ -198,6 +200,7 @@
 				14C740A11EE3583900514544 /* Array+Extension.swift */,
 				14E5C7C81EE5767E008952E0 /* UITableView+Extension.swift */,
 				1443E05E1EEC984B0005AD4A /* Date+Extension.swift */,
+				14F0E5771EF00E9100198B43 /* UIAlertController+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -410,6 +413,7 @@
 				14E5C7CB1EE579CF008952E0 /* MainViewModel.swift in Sources */,
 				14C7409E1EE352D600514544 /* BaseViewController.swift in Sources */,
 				14DD87BA1EEC79160058F7E1 /* SleepDiaryQuestionData.swift in Sources */,
+				14F0E5781EF00E9100198B43 /* UIAlertController+Extension.swift in Sources */,
 				14DD87BC1EEC791F0058F7E1 /* SleepDiaryAnswerData.swift in Sources */,
 				14C740901EE34E0700514544 /* Coordinator.swift in Sources */,
 				14E5C7BE1EE57118008952E0 /* SleepDiaryCoordinator.swift in Sources */,

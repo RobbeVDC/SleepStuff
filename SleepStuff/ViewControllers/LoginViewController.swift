@@ -70,29 +70,26 @@ class LoginViewController: BaseViewController {
         self.view.endEditing(true)
         
         guard let userEmail = self.userEmailTextField?.text, !userEmail.isEmpty else {
-            self.presentAlert(title: "Fout", subtitle: "Geef een geldig e-mailadres in", sender: self.userEmailTextField)
+            let alertController = UIAlertController.showOKAlert(message: "Geef een geldig e-mailadres in", completion: { [weak self] in
+                self?.userEmailTextField?.becomeFirstResponder()
+            })
+            self.present(alertController, animated: true, completion: nil)
+            
             return
         }
         
         guard let userPassword = self.userPasswordTextField?.text, !userPassword.isEmpty else {
-            self.presentAlert(title: "Fout", subtitle: "Geef een geldig paswoord in", sender: self.userPasswordTextField)
+            let alertController = UIAlertController.showOKAlert(message: "Geef een geldig paswoord in", completion: { [weak self] in
+                self?.userPasswordTextField?.becomeFirstResponder()
+            })
+            self.present(alertController, animated: true, completion: nil)
+            
             return
         }
         
         self.delegate?.didTapLogin(userEmail: userEmail, userPassword: userPassword, viewController: self)
     }
     
-    private func presentAlert(title: String?, subtitle: String, sender: Any?) {
-        let alertController = UIAlertController(title: title, message: subtitle, preferredStyle: .alert)
-        
-        alertController.addAction(UIAlertAction(title: "OK", style: .default, handler: { alert -> Void in
-            if let textField = sender as? UITextField {
-                textField.becomeFirstResponder()
-            }
-        }))
-        
-        self.present(alertController, animated: true, completion: nil)
-    }
 }
 
 // MARK: - UITableViewDataSource
